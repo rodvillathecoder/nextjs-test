@@ -21,12 +21,13 @@
       "node_modules/@types",
       "src/@types"
     ],
+    "paths": {
+      "@components/*": ["components/*"],
+      "@utils/*": ["utils/*"]
+    },
     "baseUrl": "./src",
     "incremental": true
   },
-  "files": [
-    "src/@types/graphql.d.ts"
-  ],
   "include": [
     "next-env.d.ts",
     "**/*.ts",
@@ -34,7 +35,8 @@
     "**/*.js",
     "**/*.graphql",
     "**/*.gql",
-    "**/*.json"
+    "**/*.json",
+    "src/**/*"
   ],
   "exclude": [
     "node_modules"
